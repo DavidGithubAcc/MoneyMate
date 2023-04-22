@@ -1,0 +1,17 @@
+[Unit]
+Description=My Flask Application
+After=network.target
+
+[Service]
+User=mckay
+Group=www-data
+WorkingDirectory=/home/mckay/
+ExecStart=/usr/bin/python3 /home/mckay/randomforestprogram.py
+
+Restart=always
+RestartSec=10
+TimeoutStopSec=150
+
+[Install]
+WantedBy=multi-user.target
+

@@ -1,0 +1,69 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Profile
+    </ion-title>
+    
+  </ion-toolbar>
+</ion-header>
+
+
+
+<ion-content [fullscreen]="true">
+  
+
+  <ion-segment [(ngModel)]="selectedContent" (ionChange)="segmentChanged()">
+    <ion-segment-button value="content1">
+      Categories
+    </ion-segment-button>
+    <ion-segment-button value="content2">
+      SubCategories
+    </ion-segment-button>
+    <ion-segment-button value="content3">
+      Want Vs Need
+    </ion-segment-button>
+  </ion-segment>
+
+
+
+<ion-content *ngIf="selectedContent === 'content1'">
+
+  <div ><canvas id="acquisitions"></canvas></div>
+
+  <script type="module" src="acquisitions.js"></script>
+
+  <ion-list id = "listcat" ></ion-list>
+
+</ion-content>
+
+
+
+
+
+<ion-content *ngIf="selectedContent === 'content2'">
+  <div ><canvas id="acquisitions2"></canvas></div>
+
+  <script type="module" src="acquisitions.js"></script>
+
+  <ion-list id = "listsubcat" ></ion-list>
+ 
+</ion-content>
+
+
+
+
+
+
+
+<ion-content *ngIf="selectedContent === 'content3'">
+ <div ><canvas id="acquisitions3"></canvas></div>
+
+ <script type="module" src="acquisitions.js"></script>
+
+ <ion-list id = "listwant" ></ion-list>
+</ion-content>
+  
+ 
+
+
+</ion-content>

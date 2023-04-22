@@ -1,0 +1,53 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Fix Error</ion-title>
+    <ion-buttons slot="start">
+      <ion-button  [strong]="true" id="cancel" >Cancel</ion-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button  [strong]="true" id="confirm" >Confirm</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-text-center">
+
+  
+
+  <ion-list>
+
+    <ion-item>
+      <ion-select label="Category" placeholder="Make a Selection" id="Category"  #categorySelect>
+        
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-select label="SubCategory" placeholder="Make a Selection" id="SubCategory" #subselect>
+       
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-select label="Want Or Need" placeholder="Make a Selection" id="WantVsNeed" #wantselect>
+      
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-select label="Index" placeholder="Make a Selection" id="Index" #indexselect>
+       
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-input label="Suggestion" placeholder="Make Suggestion" id="Suggestion"#suggestion> 
+        
+      </ion-input>
+    </ion-item>
+
+  </ion-list>
+
+
+
+</ion-content>
